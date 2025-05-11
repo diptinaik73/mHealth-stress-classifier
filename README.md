@@ -1,20 +1,36 @@
-# Multimodal Sensor Analysis: MHEALTH Project
+# mHealth Stress Classifier
 
-This project uses ECG and IMU data from the MHEALTH dataset to simulate multimodal sensor fusion for activity classification and stress-state inference. It demonstrates signal processing, feature extraction, and basic machine learning techniques using real-world data.
+This project detects stress vs calm states using the [mHealth dataset](https://archive.ics.uci.edu/ml/datasets/mhealth+dataset), combining ECG and accelerometer features.
 
-## Tools & Libraries
-- Python
-- pandas, numpy
-- scikit-learn
-- matplotlib, seaborn
+## 💡 Features Used
 
-## Project Highlights
-- Preprocessing and syncing ECG and IMU signals
-- Feature extraction from time-series data
-- Classification of activity states using Random Forest
-- Interpretation of ECG changes to simulate stress conditions
+- Accelerometer: X, Y, Z mean, Signal Magnitude Area (SMA)
+- ECG: mean, standard deviation
+- HRV: standard deviation of RR intervals
 
-## Author
-Dipti Naik  
-M.Sc. Human Movement Analytics  
-LinkedIn: [Insert Your LinkedIn Profile URL]
+## 🧠 Models Implemented
+
+- Decision Tree
+- Random Forest
+
+## 🗃️ Dataset
+
+- 10 subjects
+- Activities manually grouped into:
+  - Calm: standing, sitting, lying
+  - Stress: stairs, cycling, jogging, running
+
+## 📁 Files
+
+| File                   | Purpose                    |
+|------------------------|----------------------------|
+| `decision_tree_model.py` | 5-second window classifier |
+| `random_forest_model.py` | Ensemble classifier        |
+| `requirements.txt`     | Python dependencies        |
+
+## 🚀 How to Run
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/mHealth-stress-classifier.git
+   cd mHealth-stress-classifier
