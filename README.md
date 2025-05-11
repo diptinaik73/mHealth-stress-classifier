@@ -32,5 +32,5 @@ This project detects stress vs calm states using the [mHealth dataset](https://a
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/mHealth-stress-classifier.git
+   git clone https://github.com/diptinaik73/mHealth-stress-classifier.git
    cd mHealth-stress-classifier
