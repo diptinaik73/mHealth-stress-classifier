@@ -1,0 +1,11 @@
+# Ignore raw data and cache files
+data/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+env/
+venv/
+.mhealth-env/
+.vscode/
+.spyproject/
